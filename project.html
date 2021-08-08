@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+    href="css/style.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
+
+</head>
+<body>
+    <header>
+        <!-- <div class="logo">
+            <h2>David Lu</h2>
+        </div> -->
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="index.html#recent" class="nav__link">Recent Events</a></li>
+                <li class="nav__item"><a href="index.html#exp" class="nav__link">Experience</a></li>
+                <li class="nav__item"><a href="index.html#projects" class="nav__link">Projects</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    
+    <button id="backButton" class="backButton" >&#x2039 Back</button>
+        <script type="text/javascript">
+            document.getElementById("backButton").onclick = function () {
+                location.href = "index.html#projects";
+            };
+        </script>
+    <br>
+
+    <section class="my-projects" id="projects">
+        <h2 class="section__title">projects contd.</h2>
+        <p class="section__subtitle section__subtitle--projects1"></p>
+
+        <div class="portfolio1">
+
+            <!-- item 1 -->
+            <a class="portfolio__item1" id="js1">
+                <img src="images/js.png" alt="" class="portfolio__img1">
+                <p><strong>Pokebank</strong></p>
+                <p>
+                    The purpose of this app was to incentivize young people to use their savings accounts more, and in general to help them save more money.
+                </p>
+                <p>
+                    The users would set weekly or monthly savings goals to reach, and they would be rewarded if their milestones and goals were met. 
+                    User login data was stored using Firebase, and users had the option to use voice commands to deposit money.
+                </p>
+            </a>
+
+            <!-- item 2-->
+            <a class="portfolio__item1" id="python1">
+                <img src="images/python.png" alt="" class="portfolio__img1">
+                <p><strong>Glasswings</strong></p>
+                <p>
+                    The goal of this web app was to help youth with insurance pricing. Insurance felt like a subject which young people weren't really exposed to.
+                </p>
+                <p>
+                    The web app was crowdsourced, so any users of the app could share their information, and how much they're paying for a certain kind of insurance.
+                    The model would predict prices for different kinds of insurance based on a property the user is trying to buy in a given area.
+                </p>
+            </a>
+
+            <!-- item 3 -->
+            <a class="portfolio__item1" id="unity1">
+                <img src="images/unity.png" alt="" class="portfolio__img1">
+                <p><strong>Brick Breaker</strong></p>
+                <p>A Unity game, coded with C#, which included an interface for scoreboard, as well as a high score display.</p>
+                <p>Other functionalities included multiple levels, sound effects, gravity and also moving game objects with mouse command. </p>
+            </a>
+
+            <!-- item 4 -->
+            <a class="portfolio__item1" id="java1">
+                <img src="images/java.png" alt="" class="portfolio__img1">
+                <p><strong>Bezier Curve Drawing Tool</strong></p>
+                <p>
+                    A tool which mimics Adobe Illustrator, in a very basic way. Can be used to draw, colour, delete and modify bezier curves.
+                </p>
+                <p>
+                    There was additional functionality to modify the pivot points of the Bezier Curve. Built with Java and JavaFX with Gradle being used for build automation. 
+                </p>
+            </a>
+
+            <!-- item 5 -->
+            <a class="portfolio__item1" id="java2">
+                <img src="images/java.png" alt="" class="portfolio__img1">
+                <p><strong>Conway's Game of Life</strong></p>
+                <p>Conway's game of life built using Java, JavaFX, and Gradle for build automation.</p>
+                <p>
+                    Pieces would be placed by the player, and the pieces would be transformed based on its neighbouring pieces.
+                    The board would periodically update at every frame. There was added functionality to create, delete and draw custom shapes, as well as start and stop the game.
+                </p>
+            </a>
+            
+            
+        </div>
+        <br>
+    </section>
+
+
+    <!-- footer  -->
+    <footer class="footer">
+        <h3>View <a href="https://www.github.com/davidjhlu/"><b>source on Github</b></a></h3> 
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
